@@ -7,47 +7,59 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <div class="theme-toggle-container">
+      <label for="theme-toggle" class="theme-toggle-label">
+        <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+        <span class="theme-toggle-slider">
+          <span class="theme-icon">☀️</span>
+          <span class="theme-icon">🌙</span>
+        </span>
+      </label>
+    </div>
     <header>
       <h1>Quem está assistindo?</h1>
     </header>
     <main>
-      <section class="profiles" aria-label="Perfis de usuário">
-        <article class="profile">
-          <a href="#" aria-label="Entrar como Perfil 1">
-            <figure>
-              <img src="assets/imagens/perfil1.svg" alt="Avatar do Perfil 1">
-              <figcaption>Perfil 1</figcaption>
-            </figure>
-          </a>
-        </article>
-        <article class="profile">
-          <a href="#" aria-label="Entrar como Perfil 2">
-            <figure>
-              <img src="assets/imagens/perfil2.svg" alt="Avatar do Perfil 2">
-              <figcaption>Perfil 2</figcaption>
-            </figure>
-          </a>
-        </article>
-        <article class="profile">
-          <a href="#" aria-label="Entrar como Perfil 3">
-            <figure>
-              <img src="assets/imagens/perfil3.svg" alt="Avatar do Perfil 3">
-              <figcaption>Perfil 3</figcaption>
-            </figure>
-          </a>
-        </article>
-        <article class="profile">
-          <a href="#" aria-label="Entrar como Perfil 4">
-            <figure>
-              <img src="assets/imagens/perfil4.svg" alt="Avatar do Perfil 4">
-              <figcaption>Perfil 4</figcaption>
-            </figure>
-          </a>
-        </article>
-      </section>
+      <ul class="profiles-container" aria-label="Container de perfis">
+        <ol class="profiles">
+          <li class="profile">
+            <a href="#" aria-label="Entrar como Perfil 1">
+              <figure>
+                <img src="assets/imagens/perfil1.svg" alt="Avatar do Perfil 1">
+                <figcaption>Perfil 1</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="profile">
+            <a href="#" aria-label="Entrar como Perfil 2">
+              <figure>
+                <img src="assets/imagens/perfil2.svg" alt="Avatar do Perfil 2">
+                <figcaption>Perfil 2</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="profile">
+            <a href="#" aria-label="Entrar como Perfil 3">
+              <figure>
+                <img src="assets/imagens/perfil3.svg" alt="Avatar do Perfil 3">
+                <figcaption>Perfil 3</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="profile">
+            <a href="#" aria-label="Entrar como Perfil 4">
+              <figure>
+                <img src="assets/imagens/perfil4.svg" alt="Avatar do Perfil 4">
+                <figcaption>Perfil 4</figcaption>
+              </figure>
+            </a>
+          </li>
+        </ol>
+      </ul>
     </main>
     <footer>
       <small>Projeto de exemplo Netflix</small>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
